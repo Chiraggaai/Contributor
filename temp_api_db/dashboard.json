@@ -1,0 +1,305 @@
+{
+  "_readme": "TEMPORARY sample data for local API testing. Safe to delete — app falls back to built-in defaults in app/store.py",
+
+  "contributor_me": {
+    "id": "ctr_demo_full_001",
+    "display_name": "Jordan Rivera",
+    "anonymous_id": "anon_demo_a7f3c9",
+    "avatar": "https://example.com/avatars/jordan.png",
+    "email": "jordan.rivera@example.com",
+    "track": "multimodal_labeling",
+    "designation": "Expert Contributor",
+    "seniority_level": "Lead",
+    "verification_status": "verified",
+    "timezone": "Europe/London",
+    "availability": "32h/week",
+    "last_availability_updated_at": "2026-03-28T10:15:00Z",
+    "profile_completeness": 0.72,
+    "onboarding_complete": true,
+    "assessment_status": "results_ready",
+    "kyc_required": true,
+    "kyc_status": "pending_review"
+  },
+
+  "dashboard": {
+    "greeting_name": "Jordan",
+    "kpis": [
+      { "key": "tasks_week", "label": "Tasks this week", "value": 18, "trend": "up" },
+      { "key": "earnings_month", "label": "Earnings (month)", "value": 412.5, "trend": "up" },
+      { "key": "quality", "label": "Quality score", "value": 96, "trend": "flat" },
+      { "key": "streak", "label": "Day streak", "value": 7, "trend": "down" }
+    ],
+    "earnings_snapshot": {
+      "currency": "USD",
+      "earned_this_month": 412.5,
+      "total_paid_all_time": 12890.0,
+      "pending_payout": 199.99
+    },
+    "action_items": [
+      {
+        "id": "act_deadline_today",
+        "kind": "deadline_today",
+        "urgency": "critical",
+        "title": "Deadline today",
+        "subtitle": "QA sweep — Batch 7",
+        "task_id": "tsk_002",
+        "offer_id": null,
+        "cta_label": "Open workroom",
+        "cta_href": "/tasks/tsk_002/workroom"
+      },
+      {
+        "id": "act_deadline_tomorrow",
+        "kind": "deadline_tomorrow",
+        "urgency": "high",
+        "title": "Deadline tomorrow",
+        "subtitle": "Audio review pack",
+        "task_id": "tsk_003",
+        "cta_label": "Review task",
+        "cta_href": "/tasks/tsk_003/workroom"
+      },
+      {
+        "id": "act_rework",
+        "kind": "rework_required",
+        "urgency": "critical",
+        "title": "Rework required",
+        "subtitle": "Tighter bounding boxes requested",
+        "task_id": "tsk_005",
+        "cta_label": "Fix & resubmit",
+        "cta_href": "/tasks/tsk_005/workroom"
+      },
+      {
+        "id": "act_offer",
+        "kind": "offer_expiring",
+        "urgency": "high",
+        "title": "Offer expiring",
+        "subtitle": "New labeling batch — accept within 18h",
+        "offer_id": "off_demo_88",
+        "cta_label": "View offer",
+        "cta_href": "/offers/off_demo_88"
+      },
+      {
+        "id": "act_assessment",
+        "kind": "assessment_pending",
+        "urgency": "medium",
+        "title": "Assessment pending",
+        "subtitle": "Complete skills check to unlock premium tasks",
+        "cta_label": "Start assessment",
+        "cta_href": "/assessment"
+      },
+      {
+        "id": "act_payment",
+        "kind": "payment_ready",
+        "urgency": "low",
+        "title": "Payment ready",
+        "subtitle": "$199.99 ready for next payout",
+        "cta_label": "View earnings",
+        "cta_href": "/earnings"
+      }
+    ],
+    "system_banners": [
+      {
+        "id": "bnr_amber_avail",
+        "variant": "amber",
+        "title": "Confirm availability",
+        "body": "Your availability was last updated more than 14 days ago. Update to receive better-matched offers.",
+        "cta_label": "Update now",
+        "cta_href": "/profile/availability",
+        "dismissible": true,
+        "task_id": null
+      },
+      {
+        "id": "bnr_red_kyc",
+        "variant": "red",
+        "title": "KYC required",
+        "body": "Earnings crossed the threshold — complete identity verification to resume payouts.",
+        "cta_label": "Complete KYC",
+        "cta_href": "/profile/kyc",
+        "dismissible": false,
+        "task_id": null
+      },
+      {
+        "id": "bnr_blue_results",
+        "variant": "blue",
+        "title": "Assessment results ready",
+        "body": "Your latest assessment has been scored.",
+        "cta_label": "View results",
+        "cta_href": "/assessment/results",
+        "dismissible": true,
+        "task_id": null
+      },
+      {
+        "id": "bnr_green_promo",
+        "variant": "green",
+        "title": "Bonus week",
+        "body": "Complete 5 tasks this week for a 10% earnings bonus.",
+        "cta_label": "See details",
+        "cta_href": "/promotions/bonus-week",
+        "dismissible": true,
+        "task_id": null
+      },
+      {
+        "id": "bnr_rework_task",
+        "variant": "amber",
+        "title": "Rework deadline soon",
+        "body": "Rework deadline for Image batch #12 is in under 48 hours.",
+        "cta_label": "Open workroom",
+        "cta_href": "/tasks/tsk_005/workroom",
+        "dismissible": true,
+        "task_id": "tsk_005"
+      }
+    ],
+    "active_tasks": [
+      {
+        "id": "tsk_002",
+        "title": "QA sweep — Batch 7",
+        "project_title": "Northwind Labs",
+        "milestone_title": "Release 2",
+        "status": "in_progress",
+        "due_at": "2026-04-09T18:00:00Z",
+        "due_relative": "Today · 6:00 PM",
+        "priority": "high",
+        "workroom_path": "/tasks/tsk_002/workroom"
+      },
+      {
+        "id": "tsk_003",
+        "title": "Audio review pack",
+        "project_title": "Acme Audio",
+        "milestone_title": "Pilot",
+        "status": "submitted",
+        "due_at": "2026-04-10T12:00:00Z",
+        "due_relative": "Tomorrow",
+        "priority": "normal",
+        "workroom_path": "/tasks/tsk_003/workroom"
+      },
+      {
+        "id": "tsk_005",
+        "title": "Image batch #12 — rework",
+        "project_title": "Glimmora Core",
+        "milestone_title": "Batch 12",
+        "status": "rework",
+        "due_at": "2026-04-10T08:00:00Z",
+        "due_relative": "36h left",
+        "priority": "urgent",
+        "workroom_path": "/tasks/tsk_005/workroom"
+      }
+    ],
+    "recent_earnings": [
+      {
+        "id": "ern_001",
+        "amount": 120.0,
+        "currency": "USD",
+        "label": "Task batch — Vision QA",
+        "earned_at": "2026-04-08T14:22:00Z"
+      },
+      {
+        "id": "ern_002",
+        "amount": 45.5,
+        "currency": "USD",
+        "label": "Speed bonus",
+        "earned_at": "2026-04-07T09:00:00Z"
+      },
+      {
+        "id": "ern_004",
+        "amount": 200.0,
+        "currency": "EUR",
+        "label": "Milestone payout",
+        "earned_at": "2026-04-01T11:30:00Z"
+      }
+    ],
+    "credentials": [
+      {
+        "id": "cred_1",
+        "name": "Contributor fundamentals",
+        "issuer": "Glimmora",
+        "status": "active",
+        "expires_at": null
+      },
+      {
+        "id": "cred_2",
+        "name": "Advanced safety",
+        "issuer": "Glimmora",
+        "status": "expired",
+        "expires_at": "2025-12-01T00:00:00Z"
+      },
+      {
+        "id": "cred_3",
+        "name": "Domain expert — vision",
+        "issuer": "Partner Org",
+        "status": "pending",
+        "expires_at": null
+      }
+    ],
+    "skills": [
+      { "id": "sk_1", "name": "Image annotation", "level": "expert" },
+      { "id": "sk_2", "name": "Audio transcription", "level": "intermediate" },
+      { "id": "sk_3", "name": "QA review", "level": "beginner" }
+    ],
+    "recommended_learning": [
+      {
+        "id": "lrn_1",
+        "title": "Reducing label noise",
+        "url": "https://example.com/learn/label-noise",
+        "duration_minutes": 20,
+        "reason": "Improves your quality score"
+      },
+      {
+        "id": "lrn_2",
+        "title": "Rubric deep dive",
+        "url": "https://example.com/learn/rubrics",
+        "duration_minutes": 35,
+        "reason": "Matches your active projects"
+      }
+    ]
+  },
+
+  "notifications": [
+    {
+      "id": "ntf_001",
+      "type": "task",
+      "title": "New task assigned",
+      "body": "You have a new labeling batch ready in your queue.",
+      "read": false,
+      "created_at": "2026-04-09T05:10:00Z"
+    },
+    {
+      "id": "ntf_002",
+      "type": "payout",
+      "title": "Payout processed",
+      "body": "Your payout of $199.99 has been sent.",
+      "read": true,
+      "created_at": "2026-04-08T16:00:00Z"
+    },
+    {
+      "id": "ntf_003",
+      "type": "system",
+      "title": "Policy update",
+      "body": "Please review the updated contributor guidelines.",
+      "read": false,
+      "created_at": "2026-04-06T12:00:00Z"
+    },
+    {
+      "id": "ntf_004",
+      "type": "assessment",
+      "title": "Assessment available",
+      "body": "A new skills assessment is open for your track.",
+      "read": false,
+      "created_at": "2026-04-05T08:30:00Z"
+    },
+    {
+      "id": "ntf_005",
+      "type": "promo",
+      "title": "Bonus week",
+      "body": "Earn 10% extra on completed tasks this week.",
+      "read": true,
+      "created_at": "2026-04-04T10:00:00Z"
+    },
+    {
+      "id": "ntf_006",
+      "type": "deadline",
+      "title": "Deadline reminder",
+      "body": "Task QA sweep — Batch 7 is due today.",
+      "read": false,
+      "created_at": "2026-04-09T07:00:00Z"
+    }
+  ]
+}
